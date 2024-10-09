@@ -1,16 +1,28 @@
 {
-  "id": "epicenter",
-  "title": "Epicenter of Rust",
-  "description": "Classic Strategy RPG meets Tabletop in this Fantasy World!",
+  "id": "mysystem",
+  "title": "Minimal World Building",
+  "description": "A human-readable description of your system.",
   "version": "1.0.0",
+  "compatibility": {
+    "minimum": 12,
+    "verified": 12
+  },
   "authors": [{
-    "name": "Yushi"
+    "name": "me",
+    "url": "YOUR WEBSITE ADDRESS HERE",
+    "email": "YOUR EMAIL ADDRESS HERE",
+    "discord": "YOUR DISCORD USERNAME HERE"
   }],
-  
+  "esmodules": ["mysystem.mjs"],
+  "styles": ["styles/system-styles.css"],
   "packs": [{
+    "name": "monsters",
+    "label": "My Monsters",
+    "type": "Actor"
+  },
+  {
     "name": "items",
-    "label": "Armory",
-    "system": "epicenter"
+    "label": "My Items",
     "type": "Item"
   }],
   "languages": [{
@@ -20,21 +32,24 @@
   }],
   "documentTypes": {
     "Actor": {
-      "Unit": { "htmlFields": ["background.biography"] },
-      "Faceless": { "htmlFields": ["background.biography"] }
+      "hero": { "htmlFields": ["background.biography"] },
+      "villain": { "htmlFields": ["background.biography"] },
+      "pawn": {}
     },
     "Item": {
       "weapon": {},
-      "armor": {},
-      "consumble": {}
+      "spell": {}
     }
   },
   "socket": false,
-  "initiative": "0",
+  "initiative": "1d20",
   "grid": {
-    "distance": 5,
+    "distance": 10,
     "units": "ft"
   },
-  "primaryTokenAttribute": "resources.hp",
-  "secondaryTokenAttribute": "resources.temp",
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.power",
+  "url": "https://your/hosted/system/repo/",
+  "manifest": "https://your/hosted/system/repo/system.json",
+  "download": "https://your/packaged/download/archive.zip"
 }
