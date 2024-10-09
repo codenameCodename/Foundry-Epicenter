@@ -6,7 +6,7 @@
   "authors": [{
     "name": "Yushi"
   }],
-  "esmodules": ["actorData.mjs"],
+  
   "packs": [{
     "name": "items",
     "label": "Armory",
