@@ -1,0 +1,33 @@
+{
+  "id": "epicenter",
+  "title": "Epicenter of Rust",
+  "description": "Classic Strategy RPG meets Tabletop in this Fantasy World!",
+  "version": "1.0.0",
+  "authors": [{
+    "name": "Yushi"
+  }],
+  "packs": [{
+    "name": "items",
+    "label": "Armory",
+    "type": "Item"
+  }],
+  "documentTypes": {
+    "Actor": {
+      "Unit": { "htmlFields": ["background.biography"] },
+      "Faceless": { "htmlFields": ["background.biography"] }
+    },
+    "Item": {
+      "weapon": {},
+      "armor": {},
+      "consumable": {}
+    }
+  },
+  "socket": false,
+  "initiative": "0",
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "resources.hp",
+  "secondaryTokenAttribute": "resources.temp",
+}
